@@ -1,0 +1,13 @@
+{
+  "name": "omni-cli",
+  "version": "0.1.0",
+  "description": "Command-line interface for OmniSocial Protocol",
+  "main": "omni.ts",
+  "bin": {
+    "omni": "./omni.ts"
+  },
+  "dependencies": {
+    "commander": "^10.0.0"
+  },
+  "type": "module"
+}
