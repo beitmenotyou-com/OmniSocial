@@ -1,4 +1,4 @@
-# OmniSocial
+# OmniSocial ProtocolKit
 
 A modular, reputation-powered Layer 1 blockchain for interoperable social coordination.
 
