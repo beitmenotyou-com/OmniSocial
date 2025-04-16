@@ -1,0 +1,25 @@
+
+type Query {
+  identities: [Identity!]!
+  posts(first: Int): [Post!]!
+  reputation(id: ID!): Reputation
+}
+
+type Identity {
+  id: ID!
+  username: String!
+  domain: String!
+  verified: Boolean!
+}
+
+type Post {
+  id: ID!
+  author: String!
+  content: String!
+  timestamp: String!
+}
+
+type Reputation {
+  id: ID!
+  score: Int!
+}
