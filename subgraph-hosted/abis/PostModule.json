@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":false,"name":"id","type":"uint256"},{"indexed":false,"name":"author","type":"address"},{"indexed":false,"name":"content","type":"string"},{"indexed":false,"name":"timestamp","type":"uint256"}],"name":"PostCreated","type":"event"}]

@@ -1,0 +1,14 @@
+type Identity @entity {
+  id: ID!
+  address: Bytes!
+  username: String!
+  domain: String!
+  verified: Boolean!
+}
+
+type Post @entity {
+  id: ID!
+  author: Bytes!
+  content: String!
+  timestamp: BigInt!
+}

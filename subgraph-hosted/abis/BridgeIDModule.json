@@ -1,0 +1,1 @@
+[{"anonymous":false,"inputs":[{"indexed":true,"name":"user","type":"address"},{"indexed":false,"name":"username","type":"string"},{"indexed":false,"name":"domain","type":"string"}],"name":"IdentityCreated","type":"event"}]

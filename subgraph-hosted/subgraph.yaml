@@ -1,0 +1,43 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: BridgeIDModule
+    network: matic
+    source:
+      address: "0x0000000000000000000000000000000000000000"
+      abi: BridgeIDModule
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Identity
+      abis:
+        - name: BridgeIDModule
+          file: ./abis/BridgeIDModule.json
+      eventHandlers:
+        - event: IdentityCreated(indexed address,string,string)
+          handler: handleIdentityCreated
+      file: ./src/mapping.ts
+
+  - kind: ethereum/contract
+    name: PostModule
+    network: matic
+    source:
+      address: "0x0000000000000000000000000000000000000000"
+      abi: PostModule
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Post
+      abis:
+        - name: PostModule
+          file: ./abis/PostModule.json
+      eventHandlers:
+        - event: PostCreated(uint256,address,string,uint256)
+          handler: handlePostCreated
+      file: ./src/postMapping.ts
