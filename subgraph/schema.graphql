@@ -1,0 +1,28 @@
+type Identity @entity {
+  id: ID!
+  address: Bytes!
+  username: String!
+  domain: String!
+  verified: Boolean!
+}
+
+type Post @entity {
+  id: ID!
+  author: Bytes!
+  content: String!
+  timestamp: BigInt!
+}
+
+type Reputation @entity {
+  id: ID!
+  user: Bytes!
+  score: BigInt!
+}
+
+type Quest @entity {
+  id: ID!
+  description: String!
+  creator: Bytes!
+  reward: BigInt!
+  claimed: Boolean!
+}
