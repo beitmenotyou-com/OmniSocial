@@ -1,9 +1,9 @@
-# OmniSocial ProtocolKit
+# OmniSocial
 
 A modular, reputation-powered Layer 1 blockchain for interoperable social coordination.
 
 ## Monorepo Structure
-- `contracts/`: All core protocol modules
+- `contracts/`: All core Blockchain modules
 - `frontend/`: OmniSocial dApp
 - `sdk/`: JavaScript/TypeScript SDK
 - `cli/`: Command-line tools
