@@ -1,0 +1,3 @@
+# BridgeID Spec
+
+BridgeID is the primary identity system of OmniSocial. It uses DIDs, zkProofs, and .omni domains...
