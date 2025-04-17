@@ -1,31 +1,39 @@
-# OmniSocial
+# OmniSocial Blockchain
 
-OmniSocial is a Layer 1 blockchain purpose-built for decentralized social coordination, identity, and reputation.  
-It enables interoperable, reputation-driven applications through gasless UX, modular contracts, and sovereign user control.
+OmniSocial is a sovereign Layer 1 blockchain purpose-built for decentralized social networks, identity, and reputation.
 
-## 🧱 Monorepo Structure
+## ✨ Features
 
-- `contracts/` – Core smart contracts (identity, social, governance, reputation)
-- `frontend/` – OmniSocial app interface
-- `sdk/` – JavaScript SDK for interacting with the blockchain
-- `cli/` – Command-line tools for developers
-- `infra/` – Devnet/testnet deployment tools and scripts
-- `subgraph/` – Graph Protocol subgraph configuration
-- `test/` – Hardhat-based contract tests
-- `docs/` – Whitepapers and blockchain specs
+- Modular smart contracts for identity, posts, rep, quests, governance
+- Gasless UX and native `.omni` domains via BridgeID
+- zkProofs, personas, and social tipping
+- Fully composable SDK and frontend
 
-## ⚙️ Quickstart
+## 📦 Monorepo Structure
+
+```
+contracts/       # Solidity smart contracts
+frontend/        # Next.js social dApp
+subgraph/        # The Graph subgraph config
+sdk/             # TypeScript SDK
+docs/            # Whitepaper, specs, API docs
+infra/           # Devnet and deploy tooling
+scripts/         # CLI and setup scripts
+```
+
+## 🚀 Quick Start
 
 ```bash
 yarn install
 npx hardhat compile
 npx hardhat test
+cd frontend && yarn dev
 ```
 
-## 💡 About
+## 🧪 Testnet Deployment
 
-OmniSocial is the social layer of Web3 — a fully programmable, reputation-aware blockchain that respects identity, privacy, and human coordination.
+See `infra/devnet/README.md` for RPC setup, faucet, and funded accounts.
 
-MIT Licensed — composable and community-driven.
+## 🤝 Contributing
 
-> Where reputation is your passport, identity is sovereign, and freedom is programmable.
+Pull requests welcome! See `CONTRIBUTING.md` for style guide and test coverage goals.
